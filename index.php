@@ -322,12 +322,11 @@ $output =  "<div class=\"card\">
     <div class="container">
         <div class="content">
             <div class="lay">
-                <img src="image/logo2.png" alt="logo2">
-                <img src="image/logo1.png" alt="logo1">
-                <img src="image/logo6.png" alt="logo6">
-                <img src="image/logo3.png" alt="logo3">
-                <img src="image/logo5.png" alt="logo5">
-                <img src="image/logo4.png" alt="logo4">
+                <div class="image"><img src="image/logo1.png" alt="logo1"></div>
+                <div class="image"><img src="image/logo6.png" alt="logo6"></div>
+                <div class="image"><img src="image/logo3.png" alt="logo3"></div>
+                <div class="image"><img src="image/logo5.png" alt="logo5"></div>
+                <div class="image"><img src="image/logo4.png" alt="logo4"></div>
             </div>
         </div>
     </div> 
