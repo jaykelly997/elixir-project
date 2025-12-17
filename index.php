@@ -8,8 +8,8 @@ include "component/top.php" ;
 <!-- background section -->
 
 <div class="background">
-    <div class="text">
-        <h1>growth partner</h1>
+    <div class="text" onclick="move()">
+        <h1 id="year">growth partner</h1>
         <p>we look forward to help yo in taking your company to a new height by finding comprehensive solution</p>
         <div class="info">
             <div class="more">
@@ -377,6 +377,12 @@ $output =  "<div class=\"card\">
 
 <!-- footer -->
 
+<script>
+    
+    function move(){
+        document.getElementById("year").style.transform-translate(200px);
+    }
+</script>
 <?php
 
 include "component/footer.php" ;

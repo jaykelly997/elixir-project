@@ -17,7 +17,7 @@
 }
 .topbar .element {
     display: flex; 
-    padding: 10px auto;
+    padding: 10px 0px;
     justify-content: space-between;
 }
 .topbar .left {
@@ -44,7 +44,8 @@
 .navbar {
     width: 100%; ; 
     background-color: #FFFFFF; 
-    border: 1px solid black; 
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
 }
 .navbar .item {
     padding: 15px 0px;
@@ -89,7 +90,7 @@
     position: absolute;
     overflow: visible;
     background-color: #FFFFFF;
-    padding: 10px auto;
+    padding: 10px;
     margin: auto; 
     font-size: 12px;
     line-height: 2; 
@@ -110,7 +111,7 @@
     text-decoration: none;
     border: 2px solid #2A3855;
     border-radius: 30px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 .purchase a:hover {
     background-color: #2A3855;
@@ -128,15 +129,19 @@
     height: 80vh; 
     background: url(../image/header-1.jpg);
     background-position: center; 
-    animation: bychange 2.5s ease-out;
-    
+    animation: bychange 50s infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-delay: 10s;
 } 
 @keyframes bychange {
     0% {
         background-image: url(../image/okportech.jpg);
+        /* animation-delay: 20s; */
     }
     50% {
         background-image: url(../image/portrait-4.jpg);
+        /* animation-delay: 8s; */
     }
     
 } 
@@ -144,6 +149,7 @@
     width: 50%;
     position: absolute; 
     margin: 100px 0px 0px 80px;
+    transition: .2s ease-in;
 }
 .background .text h1 {
     text-transform: capitalize;
@@ -876,6 +882,10 @@
     }
     .navbar .nav .menu .drop ul li { 
         font-size: 12px;
+    }
+    .navbar .nav .menu .drop .sub {
+        margin-left: 100px;
+        border: 1px solid #2A3855;
     }
     .purchase {
         width: auto;
